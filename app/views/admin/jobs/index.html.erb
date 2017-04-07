@@ -1,6 +1,6 @@
 <div class="col-md-12">
 <div class="job">
-  <%= link_to("Add a job", new_job_path, :class => "btn btn-primary pull-right")%>
+  <%= link_to("Add a job", new_admin_job_path, :class => "btn btn-primary pull-right")%>
 </div>
 <table class="table table-boldered">
   <thead>
@@ -23,8 +23,8 @@
     </td>
 
     <td>
-      <%= link_to("Edit", edit_job_path(j), class: "btn btn-sm btn-default")%>
-      <%= link_to("Delete" ,job_path(j), class: "btn btn-sm btn-default",
+      <%= link_to("Edit", edit_admin_job_path(j), class: "btn btn-sm btn-default")%>
+      <%= link_to("Delete" ,admin_job_path(j), class: "btn btn-sm btn-default",
       method: :delete, data: { confirm:  "Are you sure?"})%>
     </td>
     <td>
