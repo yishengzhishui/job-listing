@@ -22,7 +22,7 @@
     <td>
       <%= link_to(j.title, admin_job_path(j))%>
     </td>
-    <td><%= j.resumes.count%></td>
+    <td><%= link_to(j.resumes.count, admin_job_resumes_path(j))%></td>
     <td><%= j.wage_lower_bound%></td>
     <td><%= j.wage_upper_bound%></td>
 
