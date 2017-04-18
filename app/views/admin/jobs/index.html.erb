@@ -27,14 +27,14 @@
     <td><%= j.wage_upper_bound%></td>
 
     <td>
-      <%= link_to("Edit", edit_admin_job_path(j), class: "btn btn-sm btn-default")%>
-      <%= link_to("Delete" ,admin_job_path(j), class: "btn btn-sm btn-default",
+      <%= link_to("Edit", edit_admin_job_path(j), class: "btn btn-xs btn-info")%>
+      <%= link_to("Delete" ,admin_job_path(j), class: "btn btn-xs btn-danger",
       method: :delete, data: { confirm:  "Are you sure?"})%>
 
       <% if j.is_hidden %>
-        <%= link_to("Publish", publish_admin_job_path(j) , :method => :post, :class => "btn btn-xs btn-primary")%>
+        <%= link_to("Publish", publish_admin_job_path(j) , :method => :post, :class => "btn btn-xs btn-success")%>
       <% else %>
-        <%= link_to("Hide", hide_admin_job_path(j), :method => :post, :class => "btn btn-xs btn-primary")%>
+        <%= link_to("Hide", hide_admin_job_path(j), :method => :post, :class => "btn btn-xs btn-warning")%>
       <% end %>
     </td>
     <td>
